@@ -23,9 +23,9 @@ import mongoose from "mongoose";
     type:Boolean,
     default:false,
   },
-  forgotPasswordToken:string,
+  forgotPasswordToken:String,
   forgotPasswordExpiresToken:Date,
-  verifyToken:string,
+  verifyToken:String,
   varifyTokenExpiry:Date,
  })
   const User= mongoose.models.user || mongoose.model('user',userSchema)
